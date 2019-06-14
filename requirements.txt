@@ -1,0 +1,4 @@
+oauthlib==1.0.3
+praw==6.0.0
+prawcore==1.0.0
+requests==2.20.0
