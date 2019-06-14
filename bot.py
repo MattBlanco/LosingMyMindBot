@@ -16,10 +16,10 @@ def bot_login():
         print ("Failed to log in!")
     return r
         
-def run_bot(r):
+def run_bot(bot):
     print ("\nFetching comments..")
     # Grab all the Recent Comments in every subreddit. This will return 100 of the newest comments on Reddit
-    for results in r.subreddit('all').comments():
+    for results in bot.subreddit('all').comments():
         global previous_id  # Import the global variable
 
         body = results.body  # Grab the Comment
@@ -59,8 +59,8 @@ def run_bot(r):
 if __name__ == "__main__":
     while True:
         try:
-            r = bot_login()
-            run_bot(r)
+            reddit_bot = bot_login()
+            run_bot(reddit_bot)
             time.sleep(10)
 
         except Exception as e:
