@@ -1,5 +1,6 @@
 import praw
 import time
+import os
 
 previous_id="0"
 
