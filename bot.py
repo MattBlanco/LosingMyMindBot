@@ -3,7 +3,6 @@ import time
 import os
 import requests
 import json
-import bot_login
 import psycopg2
 import re
 
