@@ -58,9 +58,9 @@ def run_bot(bot):
                 break
 
 if __name__ == "__main__":
+    reddit_bot = bot_login()
     while True:
         try:
-            reddit_bot = bot_login()
             run_bot(reddit_bot)
             time.sleep(10)
 
