@@ -29,7 +29,7 @@ def run_bot(bot):
             comment_id = results.id  # Get the Comment ID
 
             #check if bot is banned before posting
-            if bot.subreddit(results.subreddit).user_is_banned:
+            if results.subreddit.user_is_banned:
                 print("\n\nBanned from subreddit!")
                 break
 
