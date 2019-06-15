@@ -39,8 +39,8 @@ def run_bot(bot):
                 try:
                     # Reply to the Comment
                     print ("\n\nFound a comment with loosing!")
-                    comment_reply = "Noticed you used the word *loosing*. Did you mean **losing?**"
-                    comment_reply += "\n\n\n\n---\n\n^(Beep boop. I am a bot. If there are any issues, contact my) [^Master ](https://www.reddit.com/message/compose/?to=PositivePlayer1&subject=/u/LosingMyMindBot)\n\n"
+                    comment_reply = "Noticed you used *loosing*. Did you mean **losing?**"
+                    comment_reply += "\n\n\n\n---\n\n^(Beep boop. I am a bot. If there are any issues, contact my) [^master ](https://www.reddit.com/message/compose/?to=PositivePlayer1&subject=/u/LosingMyMindBot)\n\n"
                     results.reply(comment_reply)
                 except Exception as e:
                     # Probably low karma so can't comment as frequently
