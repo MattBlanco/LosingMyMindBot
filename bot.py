@@ -28,6 +28,11 @@ def run_bot(bot):
             body = body.lower() # Convert the comment to lowercase so we can search it no matter how it was written
             comment_id = results.id  # Get the Comment ID
 
+            #check if bot is banned before posting
+            if bot.get_subreddit(results.subreddit).user_is_banned:
+                print("\n\nBanned from subreddit!")
+                break
+
             if comment_id == previous_id:  # Check if we already replied to this comment
                 return "Error"
 
